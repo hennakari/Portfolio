@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,9 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">    
-    <title>Portfolio</title>
+    <title>Epic Subs and Bikes</title>
 </head>
-<body id="bg-img">
+<body>
     <header>
         <div class="menu-btn">
             <div class="btn-line"></div>
@@ -23,7 +23,7 @@
                 <div class="portrait"></div>
             </div>
             <ul class="menu-nav">
-                <li class="nav-item current">
+                <li class="nav-item">
                     <a href="index.html" class="nav-link">
                         Etusivu
                     </a>
@@ -33,7 +33,7 @@
                         Kuka olen
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item current">
                     <a href="work.html" class="nav-link">
                         Mitä teen
                     </a>
@@ -47,26 +47,53 @@
         </nav>
     </header>
     
-    <main id="home">
+    <main id="work">   
         <h1 class="lg-heading">
-            Henna
-            <span class="text-secondary">Kari</span>
+            Epic Sups and
+            <span class="text-secondary">Bikes</span>
         </h1>
         <h2 class="sm-heading">
-            Ohjelmistoalan opiskelija ja osaaja, Business Controller
+            Web-ohjelmoinnin harjoitustyönä toteutettu responsiivinen nettisivu 
+            oman yrityksen käyttöön.
+            Wireframe ja prototyyppi Figmalla, tekninen toteutus Reactilla.
         </h2>
-        <div class="icons">
-            <a href="#!">
-                <i class="fab fa-facebook fa-2x"></i>
+        <div class="buttons">
+            <a href="#" class="btn-light">
+                <icon class="fas fa-eye">  Katso demo</icon>
             </a>
-            <a href="#!">
-                <i class="fab fa-linkedin fa-2x"></i>
+            <a href="#" class="btn-dark">
+                <icon class="fab fa-github">  Github</icon>
             </a>
-            <a href="#!">
-                <i class="fab fa-github fa-2x"></i>
-            </a>
+        </div>    
+        <div class="epic">
+            <div class="item">      
+                    <img src="img/ESB-proto.PNG" alt="epic-proto">
+                    <img src="img/ESB-info.PNG" alt="epic-info">              
+            </div>
+            <div class="item">
+                    <img src="img/ESB-home2.PNG" alt="epic-home">
+            </div>
+            <div class="item">
+                    
+                    <img src="img/ESB-contact-adj.png" alt="epic-contact">
+                    <img src="img/ESB-vahvistus-adj.png" alt="epic-confirm">
+            </div>
+            <div class="item">
+                    <img src="img/ESB-bikes.PNG" alt="epic-bikes">              
+            </div>
+            <div class="item">
+                    <img src="img/ESB-form.PNG" alt="epic-form">
+            </div>
+            <div class="item">
+                    <img src="img/ESB-photos.PNG" alt="epic-photos">
+            </div>
         </div>
     </main>
+
+    <footer id="main-footer">
+        Copyright &copy; 2021
+    </footer>
+    
     <script src="js/main.js"></script>
     
 </body>

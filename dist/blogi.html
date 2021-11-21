@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,9 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">    
-    <title>Portfolio</title>
+    <title>Hennan ja Juuson reissublogi</title>
 </head>
-<body id="bg-img">
+<body>
     <header>
         <div class="menu-btn">
             <div class="btn-line"></div>
@@ -23,7 +23,7 @@
                 <div class="portrait"></div>
             </div>
             <ul class="menu-nav">
-                <li class="nav-item current">
+                <li class="nav-item">
                     <a href="index.html" class="nav-link">
                         Etusivu
                     </a>
@@ -33,7 +33,7 @@
                         Kuka olen
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item current">
                     <a href="work.html" class="nav-link">
                         Mitä teen
                     </a>
@@ -47,26 +47,52 @@
         </nav>
     </header>
     
-    <main id="home">
+    <main id="work">   
         <h1 class="lg-heading">
-            Henna
-            <span class="text-secondary">Kari</span>
+            Hennan ja Juuson
+            <span class="text-secondary">reissublogi</span>
         </h1>
         <h2 class="sm-heading">
-            Ohjelmistoalan opiskelija ja osaaja, Business Controller
+            Hyvän mielen matkakertomuksia toteutettuna Wordpress-julkaisujärjestelmällä.
+            Tämän sivuston toteutin Web-julkaisujärjestelmät-kurssin harjoitustyönä, mutta 
+            materiaali on syntynyt vuosien 2015-2019 aikana todellisten reissujemme myötä.
+            Pohjana käytin Blossom Travels -teemaa, jota muokkasin tarpeideni mukaan.
         </h2>
-        <div class="icons">
-            <a href="#!">
-                <i class="fab fa-facebook fa-2x"></i>
+        <div class="buttons">
+            <a href="#!" class="btn-light">
+                <icon class="fas fa-eye">  Katso demo</icon>
             </a>
-            <a href="#!">
-                <i class="fab fa-linkedin fa-2x"></i>
+            <a href="#" class="btn-dark">
+                <icon class="fab fa-github">  Github</icon>
             </a>
-            <a href="#!">
-                <i class="fab fa-github fa-2x"></i>
-            </a>
+        </div>    
+        <div class="blogi">
+            <div class="home">
+                    <img src="img/Blogi-home-adj.PNG" alt="blogi-home">
+            </div>
+            <div class="post">
+                    <img src="img/Blogi-post.PNG" alt="blogi-post">
+            </div>
+            <div class="origin">
+                <img src="img/Blogi-synty-adj.PNG" alt="blogi-synty">
+            </div>
+            <div class="writers">
+                <img src="img/Blogi-kirjoittajat-adj.PNG" alt="blogi-writers">
+            </div>
+            <div class="travel">
+                <img src="img/Blogi-reissut-adj.PNG" alt="blogi-reissut">
+                             
+            </div>
+            <div class="destination">
+                <img src="img/Blogi-kohde-adj.PNG" alt="blogi-kohde"> 
+            </div>
         </div>
     </main>
+
+    <footer id="main-footer">
+        Copyright &copy; 2021
+    </footer>
+    
     <script src="js/main.js"></script>
     
 </body>
