@@ -9,7 +9,9 @@ var config = {
     font: "sans-serif"
 }
 
-var words = ["words", "are", "cool", "and", "so", "are", "you", "inconstituent", "funhouse!", "apart", "from", "Steve", "fish"].map(function(word) {
+var words = ["python", "visual studio code", "c", "react", "html", "ms office", 
+"figma", "javascript", "typescript", "hyperion", "dart", "flutter", "linux", 
+"css", "scss", "mysql", "mongodb", "express", "node", "miro"].map(function(word) {
     return {
         word: word,
         freq: Math.floor(Math.random() * 50) + 10
