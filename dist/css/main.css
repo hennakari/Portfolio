@@ -1,3 +1,4 @@
+/* valikon tyylit */
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -114,6 +115,8 @@
   transition-delay: 0.4s;
 }
 
+/* Yleiset tyylit */
+
 * {
   box-sizing: border-box;
 }
@@ -203,6 +206,8 @@ main#contact {
   padding-bottom: 0.5rem;
 }
 
+/* about.html -sivun tyylit */
+
 .about-info {
   display: grid;
   grid-gap: 30px;
@@ -244,6 +249,8 @@ main#contact {
   font-weight: bold;
 }
 
+/* work.html -sivun tyylit */
+
 .projects {
   display: grid;
   grid-gap: 1rem;
@@ -259,6 +266,8 @@ main#contact {
   transition: all 0.5s ease-out;
 }
 
+/* epic.html -sivun tyylit */
+
 .epic {
   display: grid;
   grid-gap: 1rem;
@@ -268,6 +277,8 @@ main#contact {
   width: 100%;
   border: 6px white solid;
 }
+
+/* shelter.html -sivun tyylit */
 
 .shelter {
   display: grid;
@@ -310,6 +321,8 @@ main#contact {
   grid-area: figma2;
 }
 
+/* beach.html -sivun tyylit */
+
 .beach {
   display: grid;
   grid-gap: 1rem;
@@ -319,6 +332,8 @@ main#contact {
   width: 100%;
   border: 6px white solid;
 }
+
+/* dashboard.html -sivun tyylit */
 
 .dashboard {
   display: grid;
@@ -347,6 +362,8 @@ main#contact {
 .dashboard .mongo {
   grid-area: mongo;
 }
+
+/* blogi.html -sivun tyylit */
 
 .blogi {
   display: grid;
@@ -381,13 +398,8 @@ main#contact {
   grid-area: destination;
 }
 
-/* .boxes {
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(2, 1fr);
-  margin: 1rem auto;
-  justify-items: center;
-} */
+/* contact.html -sivun tyylit */
+
 .boxes {
   display: grid;
   grid-gap: 1rem;
@@ -434,6 +446,9 @@ main#contact {
 .boxes #info:hover span {
   color: #000;
 }
+
+/* contact.html -sivun tyylit, sanapilvi */
+
 #word-cloud {
   height: 50vh;
   width: 50vw;
@@ -446,6 +461,8 @@ main#contact {
   margin: 0 auto;
   border: none;
 }
+
+/* sivujen buttonit */
 
 .btn,
 .btn-dark,
@@ -481,6 +498,8 @@ main#contact {
   width: 25em;
 }
 
+/* footer */
+
 #main-footer {
   text-align: center;
   padding: 1rem;
@@ -488,6 +507,8 @@ main#contact {
   color: #c0c0c0;
   height: 60px;
 }
+
+/* mediakyselyt */
 
 @media screen and (min-width: 1171px) {
   .projects {

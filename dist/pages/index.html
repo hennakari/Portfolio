@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">    
-    <title>Keski-Suomen viihtyisimmät uimarannat</title>
+    <link rel="stylesheet" href="../css/main.css">    
+    <title>Portfolio</title>
 </head>
-<body>
+<body id="bg-img">
     <header>
         <div class="menu-btn">
             <div class="btn-line"></div>
@@ -23,7 +23,7 @@
                 <div class="portrait"></div>
             </div>
             <ul class="menu-nav">
-                <li class="nav-item">
+                <li class="nav-item current">
                     <a href="index.html" class="nav-link">
                         Etusivu
                     </a>
@@ -33,7 +33,7 @@
                         Kuka olen
                     </a>
                 </li>
-                <li class="nav-item current">
+                <li class="nav-item">
                     <a href="work.html" class="nav-link">
                         Mitä teen
                     </a>
@@ -47,52 +47,27 @@
         </nav>
     </header>
     
-    <main id="work">   
+    <main id="home">
         <h1 class="lg-heading">
-            Keski-Suomen viihtyisimmät
-            <span class="text-secondary">uimarannat</span>
+            Henna
+            <span class="text-secondary">Kari</span>
         </h1>
         <h2 class="sm-heading">
-            Tietokannat-kurssin harjoitustyönä parin kanssa toteutettu MySQL-tietokantaratkaisu. 
-            Suunnittelu tapahtui Figmalla, kaaviot piirrettiin draw.io:lla ja tietokanta 
-            rakennettiin MySQL Workbenchillä. Käyttöliittymänä toimi JavaScriptillä toteutettu 
-            yksinkertainen websivusto. 
+            Ohjelmistoalan opiskelija ja osaaja, Business Controller
         </h2>
-        <div class="buttons">
-            <a href="#!" class="btn-light">
-                <icon class="fas fa-eye">  Demoa ei ole saatavilla</icon>
+        <div class="icons">
+            <a href="#!">
+                <i class="fab fa-facebook fa-2x"></i>
             </a>
-            <a href="#" class="btn-dark">
-                <icon class="fab fa-github">  Github</icon>
+            <a href="#!">
+                <i class="fab fa-linkedin fa-2x"></i>
             </a>
-        </div>   
-        <div class="beach">
-            <div class="item">
-                <img src="img/Beach-uimaranta-db-adj.PNG" alt="beach-db">
-            </div>
-            <div class="item">
-                <img src="img/Beach-mysql-workbench-adj.PNG" alt="beach-mysql">
-            </div>
-            <div class="item">
-                <img src="img/Beach-proto.PNG" alt="beach-proto">
-            </div>
-            <div class="item">
-                <img src="img/Beach-Home-adj.PNG" alt="beach-home">
-            </div>
-            <div class="item">
-                <img src="img/Beach-pin-adj.png" alt="beach-pin">
-            </div>
-            <div class="item">
-                <img src="img/Beach-form-adj.PNG" alt="beach-form">
-            </div>    
+            <a href="#!">
+                <i class="fab fa-github fa-2x"></i>
+            </a>
         </div>
     </main>
-
-    <footer id="main-footer">
-        Copyright &copy; 2021
-    </footer>
-    
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
     
 </body>
 </html>

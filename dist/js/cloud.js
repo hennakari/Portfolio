@@ -10,7 +10,7 @@ var config = {
 }
 
 var words = ["python", "visual studio code", "c", "react", "html", "ms office", 
-"figma", "javascript", "typescript", "hyperion", "dart", "flutter", "linux", 
+"figma", "javascript", "typescript", "hyperion", "dart","procountor", "flutter", "linux", 
 "css", "scss", "mysql", "mongodb", "express", "node", "miro"].map(function(word) {
     return {
         word: word,
