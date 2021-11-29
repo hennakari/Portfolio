@@ -466,7 +466,9 @@ main#contact {
 
 .btn,
 .btn-dark,
-.btn-light {
+.btn-light,
+.btn-dark-no-hover,
+.btn-light-no-hover {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
@@ -479,12 +481,14 @@ main#contact {
   color: #000;
 }
 
-.btn-dark {
+.btn-dark,
+.btn-dark-no-hover {
   background: #666666;
   color: #f8f2ed;
 }
 
-.btn-light {
+.btn-light,
+.btn-light-no-hover {
   background: #c4c4c4;
   color: #666666;
 }
@@ -494,7 +498,9 @@ main#contact {
 }
 
 .buttons .btn-dark,
-.buttons .btn-light {
+.buttons .btn-light,
+.buttons .btn-dark-no-hover,
+.buttons .btn-light-no-hover {
   width: 25em;
 }
 
@@ -737,7 +743,9 @@ main#contact {
     grid-template-columns: 1fr;
   }
   .buttons .btn-dark,
-  .buttons .btn-light {
+  .buttons .btn-light,
+  .buttons .btn-dark-no-hover,
+  .buttons .btn-light-no-hover {
     width: 15em;
   }
 
