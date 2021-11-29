@@ -1,0 +1,772 @@
+/* valikon tyylit */
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+.menu-btn .btn-line {
+  width: 28px;
+  height: 3px;
+  margin: 0 0 5px 0;
+  background: #666666;
+  transition: all 0.5s ease-out;
+}
+.menu-btn.close {
+  transform: rotate(180deg);
+}
+.menu-btn.close .btn-line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.menu-btn.close .btn-line:nth-child(2) {
+  opacity: 0;
+}
+.menu-btn.close .btn-line:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.95;
+  visibility: hidden;
+}
+.menu.show {
+  visibility: visible;
+}
+.menu-branding,
+.menu-nav {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  width: 50%;
+  height: 100vh;
+  overflow: hidden;
+}
+.menu-nav {
+  margin: 0;
+  padding: 0;
+  background: #f8f2ed;
+  list-style: none;
+  transform: translate3d(0, -100%, 0);
+  transition: all 0.5s ease-out;
+}
+.menu-nav.show {
+  transform: translate3d(0, 0, 0);
+}
+.menu-branding {
+  background: #c0c0c0;
+  transform: translate3d(0, 100%, 0);
+  transition: all 0.5s ease-out;
+}
+.menu-branding.show {
+  transform: translate3d(0, 0, 0);
+}
+.menu-branding .portrait {
+  width: 250px;
+  height: 250px;
+  background: url("../img/Henna_250-250.jpg");
+  border-radius: 50%;
+  border: solid 3px #d3649f;
+}
+.menu .nav-item {
+  transform: translate3d(600px, 0, 0);
+  transition: all 0.5s ease-out;
+}
+.menu .nav-item.show {
+  transform: translate3d(0, 0, 0);
+}
+.menu .nav-item.current > a {
+  color: #d3649f;
+}
+.menu .nav-link {
+  display: inline-block;
+  position: relative;
+  font-size: 30px;
+  text-transform: uppercase;
+  padding: 1rem 0;
+  font-weight: 300;
+  color: #666666;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+}
+.menu .nav-link:hover {
+  color: #d3649f;
+}
+
+.nav-item:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.nav-item:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.nav-item:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.nav-item:nth-child(4) {
+  transition-delay: 0.4s;
+}
+
+/* Yleiset tyylit */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f8f2ed;
+  color: #666666;
+  height: 100%;
+  margin: 0;
+  font-family: "Comfortaa", cursive;
+  line-height: 1.5;
+}
+body#bg-img {
+  background: url(../img/tausta4.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+body#bg-img:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: rgba(248, 242, 237, 0.8);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 400;
+}
+h1.lg-heading,
+h2.lg-heading,
+h3.lg-heading {
+  font-size: 6rem;
+}
+h1.sm-heading,
+h2.sm-heading,
+h3.sm-heading {
+  margin-bottom: 2rem;
+  padding: 0.2rem 1rem;
+  /*
+  background: #c0c0c0;
+    */
+  border-bottom: #d3649f 6px solid;
+}
+
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+.text-secondary {
+  color: #d3649f;
+}
+
+main {
+  padding: 4rem;
+  min-height: calc(100vh - 60px);
+}
+main .icons {
+  margin-top: 1rem;
+}
+main .icons a {
+  padding: 0.4rem;
+}
+main .icons a:hover {
+  color: #d3649f;
+  transition: all 0.5s ease-out;
+}
+main#home {
+  overflow: hidden;
+}
+main#home h1 {
+  margin-top: 20vh;
+}
+main#contact {
+  padding-bottom: 0.5rem;
+}
+
+/* about.html -sivun tyylit */
+
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas:
+    "bioimage bio bio"
+    "job1 job2 job3";
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.about-info .bio-image {
+  grid-area: bioimage;
+  margin: auto;
+  border-radius: 50%;
+  border: #d3649f 6px solid;
+}
+.about-info .bio {
+  grid-area: bio;
+  font-size: 1.5rem;
+}
+.about-info .bio span {
+  color: #d3649f;
+  font-weight: 600;
+}
+.about-info .job-1 {
+  grid-area: job1;
+}
+.about-info .job-2 {
+  grid-area: job2;
+}
+.about-info .job-3 {
+  grid-area: job3;
+}
+.about-info .job {
+  background: #c0c0c0;
+  padding: 0.5rem;
+  border-bottom: #d3649f 6px solid;
+}
+.about-info .job h2 {
+  color: #666666;
+  font-weight: bold;
+}
+
+/* work.html -sivun tyylit */
+
+.projects {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.projects img {
+  width: 100%;
+  border: 6px white solid;
+}
+.projects img:hover {
+  opacity: 0.5;
+  border-color: #d3649f;
+  transition: all 0.5s ease-out;
+}
+
+/* epic.html -sivun tyylit */
+
+.epic {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.epic img {
+  width: 100%;
+  border: 6px white solid;
+}
+
+/* shelter.html -sivun tyylit */
+
+.shelter {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-areas:
+    "miro1 miro2 miro3 miro4"
+    "proto proto home home"
+    "figma1 figma1 figma2 figma2";
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.shelter img {
+  width: 100%;
+  border: 6px white solid;
+}
+
+.shelter .miro1 {
+  grid-area: miro1;
+}
+.shelter .miro2 {
+  grid-area: miro2;
+}
+.shelter .miro3 {
+  grid-area: miro3;
+}
+.shelter .miro4 {
+  grid-area: miro4;
+}
+.shelter .proto {
+  grid-area: proto;
+}
+.shelter .home {
+  grid-area: home;
+}
+
+.shelter .figma1 {
+  grid-area: figma1;
+}
+.shelter .figma2 {
+  grid-area: figma2;
+}
+
+/* beach.html -sivun tyylit */
+
+.beach {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.beach img {
+  width: 100%;
+  border: 6px white solid;
+}
+
+/* dashboard.html -sivun tyylit */
+
+.dashboard {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-areas:
+    "home events"
+    "home form"
+    "home mongo";
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.dashboard img {
+  width: 100%;
+  border: 6px white solid;
+}
+
+.dashboard .home {
+  grid-area: home;
+}
+.dashboard .events {
+  grid-area: events;
+}
+.dashboard .form {
+  grid-area: form;
+}
+.dashboard .mongo {
+  grid-area: mongo;
+}
+
+/* blogi.html -sivun tyylit */
+
+.blogi {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-areas:
+    "home home post post"
+    "origin writers travel destination";
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.blogi img {
+  width: 100%;
+  border: 6px white solid;
+}
+
+.blogi .home {
+  grid-area: home;
+}
+.blogi .post {
+  grid-area: post;
+}
+.blogi .origin {
+  grid-area: origin;
+}
+.blogi .writers {
+  grid-area: writers;
+}
+.blogi .travel {
+  grid-area: travel;
+}
+.blogi .destination {
+  grid-area: destination;
+}
+
+/* contact.html -sivun tyylit */
+
+.boxes {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-areas:
+    "email cloud"
+    "phone cloud"
+    "address cloud"
+    "linkedin cloud";
+  grid-template-columns: repeat(2, 1fr);
+  margin: 1rem auto;
+  justify-items: center;
+}
+.boxes .email {
+  grid-area: email;
+}
+.boxes .cloud {
+  grid-area: cloud;
+}
+.boxes .phone {
+  grid-area: phone;
+}
+.boxes .address {
+  grid-area: address;
+}
+.boxes .linkedin {
+  grid-area: linkedin;
+}
+
+.boxes #info {
+  font-size: 1.5rem;
+  border: 3px #666666 solid;
+  padding: 1.5rem 2.5rem;
+  margin-bottom: 2rem;
+  transition: all 0.5s ease-out;
+  height: 5rem;
+  width: 30rem;
+  align-items: center;
+  text-align: center;
+}
+.boxes #info:hover {
+  background: #d3649f;
+  color: #000;
+}
+.boxes #info:hover span {
+  color: #000;
+}
+
+/* contact.html -sivun tyylit, sanapilvi */
+
+#word-cloud {
+  height: 50vh;
+  width: 50vw;
+  margin: 0 auto;
+}
+
+#word-cloud canvas {
+  height: 50vh;
+  width: 50vw;
+  margin: 0 auto;
+  border: none;
+}
+
+/* sivujen buttonit */
+
+.btn,
+.btn-dark,
+.btn-light {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+}
+.btn:hover,
+.btn-dark:hover,
+.btn-light:hover {
+  background: #d3649f;
+  color: #000;
+}
+
+.btn-dark {
+  background: #666666;
+  color: #f8f2ed;
+}
+
+.btn-light {
+  background: #c4c4c4;
+  color: #666666;
+}
+
+.buttons {
+  margin-bottom: 2em;
+}
+
+.buttons .btn-dark,
+.buttons .btn-light {
+  width: 25em;
+}
+
+/* footer */
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: #666666;
+  color: #c0c0c0;
+  height: 60px;
+}
+
+/* mediakyselyt */
+
+@media screen and (min-width: 1171px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .epic {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .shelter {
+    grid-template-areas:
+      "miro1 miro2"
+      "miro3 miro4"
+      "proto proto"
+      "home home"
+      "figma1 figma1"
+      "figma2 figma2";
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .beach {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .dashboard {
+    grid-template-areas:
+      "home"
+      "events"
+      "form"
+      "mongo";
+    grid-template-columns: 1fr;
+  }
+  .blogi {
+    grid-template-areas:
+      "home home"
+      "post post"
+      "origin writers"
+      "travel destination";
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .boxes {
+    grid-template-areas:
+      "email"
+      "phone"
+      "address"
+      "linkedin"
+      "cloud";
+    grid-template-columns: 1fr;
+  }
+
+  #word-cloud {
+    height: auto;
+    width: 100vw;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  #word-cloud canvas {
+    height: auto;
+    width: 100vw;
+    margin: 0 auto;
+    border: none;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center;
+  }
+  main .lg-heading {
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0;
+  }
+  ul.menu-nav.show,
+  div.menu-branding.show {
+    transform: translate3d(0, 0, 0);
+  }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px;
+  }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0);
+  }
+  .menu-branding .portrait {
+    background: url("../img/Henna_150-150.jpg");
+    width: 150px;
+    height: 150px;
+  }
+  .about-info {
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "job1"
+      "job2"
+      "job3";
+    grid-template-columns: 1fr;
+  }
+  .projects {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .epic {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .shelter {
+    grid-template-areas:
+      "miro1"
+      "miro2"
+      "miro3"
+      "miro4"
+      "proto"
+      "proto"
+      "home"
+      "home"
+      "figma1"
+      "figma1"
+      "figma2"
+      "figma2";
+    grid-template-columns: 1fr;
+  }
+  .beach {
+    grid-template-columns: 1fr;
+  }
+  .dashboard {
+    grid-template-areas:
+      "home"
+      "events"
+      "form"
+      "mongo";
+    grid-template-columns: 1fr;
+  }
+  .blogi {
+    grid-template-areas:
+      "home"
+      "home"
+      "post"
+      "post"
+      "origin"
+      "writers"
+      "travel"
+      "destination";
+    grid-template-columns: 1fr;
+  }
+  .boxes {
+    grid-template-areas:
+      "email"
+      "phone"
+      "address"
+      "linkedin"
+      "cloud";
+    grid-template-columns: 1fr;
+  }
+  .boxes #info {
+    padding: 1.5rem 0rem;
+    height: 5rem;
+    width: 23rem;
+  }
+  #word-cloud {
+    height: auto;
+    width: 100vw;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  #word-cloud canvas {
+    height: auto;
+    width: 100vw;
+    margin: 0 auto;
+    border: none;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main#home h1 {
+    margin-top: 10vh;
+  }
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .epic {
+    grid-template-columns: 1fr;
+  }
+  .shelter {
+    grid-template-areas:
+      "miro1"
+      "miro2"
+      "miro3"
+      "miro4"
+      "proto"
+      "proto"
+      "home"
+      "home"
+      "figma1"
+      "figma1"
+      "figma2"
+      "figma2";
+    grid-template-columns: 1fr;
+  }
+  .beach {
+    grid-template-columns: 1fr;
+  }
+  .dashboard {
+    grid-template-areas:
+      "home"
+      "events"
+      "form"
+      "mongo";
+    grid-template-columns: 1fr;
+  }
+  .buttons .btn-dark,
+  .buttons .btn-light {
+    width: 15em;
+  }
+
+  .boxes {
+    grid-template-areas:
+      "email"
+      "phone"
+      "address"
+      "linkedin"
+      "cloud";
+    grid-template-columns: 1fr;
+  }
+
+  .boxes #info {
+    padding: 1.5rem 0rem;
+    height: 5rem;
+    width: 23rem;
+  }
+  #word-cloud {
+    height: auto;
+    width: 100vw;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  #word-cloud canvas {
+    height: auto;
+    width: 100vw;
+    margin: 0 auto;
+    border: none;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">    
+    <title>Harkkadashboard</title>
+</head>
+<body>
+    <header>
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+        <nav class="menu">
+            <div class="menu-branding">
+                <div class="portrait"></div>
+            </div>
+            <ul class="menu-nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        Etusivu
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">
+                        Kuka olen
+                    </a>
+                </li>
+                <li class="nav-item current">
+                    <a href="work.html" class="nav-link">
+                        Mitä teen
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">
+                        Ota yhteyttä
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main id="work">   
+        <h1 class="lg-heading">
+            Hennan
+            <span class="text-secondary">Harkka-Dashboard</span>
+        </h1>
+        <h2 class="sm-heading">
+            Full Stack-kurssin harjoitustyönä toteutettu Mern Stack (Mongo-Express-React-Node) 
+            ohjelma työssäoppimisjakson raportointiin. Tietokantapuolella Mongodb huolehtii 
+            paitsi tapahtumien tallentamisesta myös etusivun kuvaajien tuottamisesta Mongodb 
+            Chartsilla. Käyttöliittymäpuoli on ohjelmoitu Reactilla.
+        </h2>
+        <div class="buttons">
+            <a href="#!" class="btn-light">
+                <icon class="fas fa-eye">  Katso demo</icon>
+            </a>
+            <a href="#" class="btn-dark">
+                <icon class="fab fa-github">  Github</icon>
+            </a>
+        </div>    
+        <div class="dashboard">
+            <div class="home">
+                    <img src="../img/Dashboard-home-adj.PNG" alt="dashboard-home">
+            </div>
+            <div class="events">
+                    <img src="../img/Dashboard-events-adj.PNG" alt="dashboard-events">
+            </div>
+            <div class="form">
+                <img src="../img/Dashboard-form.PNG" alt="dashboard-form">
+            </div>
+            <div class="writers">
+                <img src="../img/Dashboard-mongodb-adj.PNG" alt="dashboard-mongo">
+            </div>
+        </div>
+    </main>
+
+    <footer id="main-footer">
+        Copyright &copy; 2021
+    </footer>
+    
+    <script src="../js/main.js"></script>
+    
+</body>
+</html>
