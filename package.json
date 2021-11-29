@@ -1,0 +1,10 @@
+
+{
+  "homepage": "https://hennakari.github.io/Portfolio",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
